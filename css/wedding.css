@@ -1,0 +1,699 @@
+@keyframes zoom{
+    0%{
+        transform: scale(0.9);
+    }
+
+    25%{
+        transform: scale(2);
+    }
+
+    60%{
+        transform: scale(9.9);
+    }
+
+    100%{
+        transform: scale(0.9);
+    }
+}
+/* 
+@keyframes move{
+    from {
+        transform: translateY(200px);
+    }
+
+    to{
+        transform: translateY(-22px);
+    }
+} */
+
+
+
+.clear{
+    clear: both;
+}
+
+.carousel-caption{
+    top: -115px;
+}
+
+
+.wname{
+    position: relative;
+}
+.wname h1{
+    color: red;
+    margin: 480px 0 0 0;
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.274);
+    margin-bottom: 8px;
+    
+   
+}
+
+.wname h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.432);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding:  5px 0 10px 0;
+    font-size: 30px;
+    display: inline;
+
+
+}
+
+.active{
+    display: none;
+}
+
+.carousel-indicators{
+    display: none;
+}
+
+.circle{
+    bottom: -130px;
+    z-index: 50px;
+    opacity: 1;
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    left: 40%;
+    border-radius: 50%;
+    background: rgb(218, 15, 15);
+    margin: 0  auto;
+   /* overflow: hidden; */
+   transition: 1s 2.3s ease-in-out;
+   animation: move 3s 2s ;
+}
+
+
+.circle::before{
+    background-color: rgba(255, 0, 0, 0.541);
+    width: 110%;
+    height: 110%;
+    left: 5%;
+    right: 5%;
+    animation: zoom 1s infinite;
+    box-sizing: border-box;
+    display: block;
+    
+}
+
+.circle::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1%;
+}
+
+::after, ::before{
+    box-sizing: border-box;
+}
+
+.circle h4{
+    margin: 60px 0 10px 60px;
+    color: #fff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    
+}
+
+.date{
+  margin: 0 0 0 90px;  
+  color: #fff;
+  font-size: 22px;
+}
+
+.header-nav{
+    height: 130px;
+    border-bottom: 4px double rgb(142, 162, 182);
+    /* padding: 0 0 40px 0; */
+    margin: 0 0 50px 0;
+}
+
+.header-nav i{
+    color: red;
+    font-size: 25px;
+    padding: 0 0px 0 30px;
+    text-shadow: gray;
+    display: inline;
+  
+}
+
+
+.header-nav a{
+    color: rgb(231, 50, 50);
+    font-size: 20px;
+    font-family: serif;
+    text-transform: uppercase;
+    padding: 0 20px 0 0;
+    
+}
+
+.header-nav a:hover{
+    color: #fff;
+    background: red;
+}
+
+
+.flex-shrink-0{
+    margin: 0 100px 0 100px;
+    overflow: hidden;
+}
+
+.flex-grow-1 h1{
+    text-transform: uppercase;
+    margin: 0 20px 30px 300px;
+    font-family: serif;
+    color: rgb(231, 50, 50);
+}
+
+.flex-grow-1 p{
+    color: gray;
+    margin: 0 0 30px 40px;
+    overflow: hidden;
+}
+
+.flex-grow-1 h3{
+    text-transform:  capitalize;
+    margin: 0 20px 30px 400px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+
+
+
+.flex-grow-2 h3{
+    text-transform:  capitalize;
+    margin: 0 400px 30px 0px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+
+.flex-grow-2 h1{
+    text-transform: uppercase;
+    margin: -250px 300px 40px 0px;
+    font-family: serif;
+    color: rgb(231, 50, 50);
+}
+
+span a i{
+  
+    font-size: 20px;
+    color: rgb(231, 50, 50);
+    margin: 10px 5px 0 5px;
+    border-radius: 50%;
+}
+
+span1 a i{
+  
+    font-size: 20px;
+    color: rgb(231, 50, 50);
+    margin: 0px 5px 0 5px;
+    float: right;
+    border-radius: 50%;
+}
+
+.flex-grow-2 p{
+    color: gray;
+    margin: -30px 40px 30px 0px;
+    overflow: hidden;
+}
+
+i{
+    color: red;
+}
+
+.story h1{
+    
+    text-shadow: grey;
+    text-align: center;
+    color: red;
+    
+}
+
+button{
+    display: none;
+}
+
+.carousel-darkslide{
+    overflow: hidden;
+}
+
+/* ====header 1 */
+.navbar-light{
+    overflow: hidden;
+}
+ .navbar-light a.navbar-brand{
+    color: red;
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+button.btn-outline-success{
+    color: red;
+    border-color: red;
+}
+
+/* =====count */
+
+.count{
+    background-image: url(../image/Beach-Couple-Love-Romantic-Wallpaper\(1\).jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+/* .count input{
+    padding: 30px 20px;
+    overflow: hidden;
+    float: right;
+    margin: 40px 90px 0 60px;
+    width: 40%;
+    border: 2px solid grey;
+} */
+
+.count h1{
+    font-family:'Great Vibes', cursive; 
+    font-size: 60px;
+    margin: 0px 0 0 50px;
+    color: red;
+    padding: 120px 0 0 0;
+}
+
+.count form input{
+    background: wheat;
+}
+.count a{
+    color: red;
+    background: white;
+    border: 3px solid rgba(128, 128, 128, 0.685);
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: -100px 30px 0 20px;
+    padding: 15px 25px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    cursor: auto;
+    
+}
+
+/* ===story */
+
+.bird i{
+    padding:   20px 0 40px 670px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.story h1{
+    font-family:'Great Vibes', cursive; 
+    text-align: center;
+    background :rgb(238, 31, 31) ;
+    display: inline;
+    margin: 0 0 60px 550px;
+    padding: 20px 20px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 45px;
+    /* border: 5px solid green; */
+   
+}
+ /* .vr{
+    min-width: 1px;
+    display: block;
+    padding: 0 80px 0 0;
+    /* margin: 30px 20px 0 0; */
+    /* height: 50px;
+    opacity: 100%;
+    color: red;
+}  */ 
+
+.flex-shrink-2 img{
+
+    margin: 60px 0 0 180px;
+    width: 70%;
+    height: auto;
+    border: 2px solid grey;
+    box-shadow: rgba(128, 128, 128, 0.685);
+}
+
+.flex-grow-4 h3 {
+
+    /* text-align: center; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 20px 20px 80px;
+    color: red;
+    /* border-bottom: 1px solid grey; */
+    /* display: inline; */
+    text-transform: uppercase;
+
+}
+
+.flex-grow-4 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    overflow: hidden;
+    margin: 0 0 0 80px
+    
+}
+
+/* ===celebration */
+
+.cele{
+    background: url(../image/photo-1615966650071-855b15f29ad1.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0 60px 0;
+}
+
+.cele h4{
+    text-align: center;
+    color: honeydew;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:  90px 0 20px 0;
+    /* font-weight: bold; */
+}
+
+.cele h1{
+    text-align: center;
+    font-family:'Great Vibes', cursive;
+    color: honeydew;
+    font-size: 90px;
+    text-transform: capitalize;
+
+}
+
+.event h1{
+    font-family:'Great Vibes', cursive; 
+    text-align: center;
+    background :rgb(238, 31, 31) ;
+    display: inline;
+    margin: 160px 0 60px 550px;
+    padding: 20px 20px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 45px;
+    /* border: 5px solid green; */
+   
+}
+
+.flex-shrink-6 img{
+    width: 50%;
+    height: auto;
+    margin: 90px 0 0 180px;
+    border:  2px solid grey;
+}
+
+.flex-grow-5 h3{
+    color:  red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin: 60px  90px 30px -150px;
+
+}
+
+.flex-grow-5 p{
+    margin: 0 0 0px -150px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.flex-grow-5 i{
+    font-size: 25px;
+}
+
+.flex-shrink-7 img{
+    width: 90%;
+    height: auto;
+    margin: 90px 0 0 180px;
+    border:  2px solid grey;
+    overflow: hidden;
+}
+
+
+.flex-shrink-8 img{
+    width: 55%;
+    height: auto;
+    margin: 90px 0 0 180px;
+    border:  2px solid grey;
+    overflow: hidden;
+}
+
+.event{
+    margin: 0 0 90px 0;
+}
+
+
+.flex-grow-7 h3{
+    color:  red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin: 80px  0px 30px 180px;
+
+}
+.flex-grow-7 p{
+    margin: 0 0 0px 180px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.flex-grow-7 i{
+    font-size: 25px;
+}
+
+.made h1{
+    font-family:'Great Vibes', cursive; 
+    text-align: center;
+    background :rgb(238, 31, 31) ;
+     display: inline; 
+    margin: 80px 0 60px 500px; 
+    padding: 10px 0px 20px 10px ;
+    text-transform: capitalize;
+    color: white;
+    font-size: 38px;
+    overflow: hidden;
+     border: 1px solid gray;
+   
+}
+.made{
+    margin: 0 0 60px 0;
+}
+.card-body h5{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:gray;
+    font-size: 16px;
+    /* border: 2px solid gray; */
+    /* display: inline; */
+}
+
+.card-body h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+.card img{
+
+margin: 10px 40px 10px 110px;
+    overflow: hidden;
+    width: 70%;
+     /* border-radius: 100px;  */
+     border: 2px solid gray;
+     cursor: pointer;
+     transition: all 0.5sec ease-in;
+     display: block;
+
+
+}
+
+.card img:hover{
+    transform: SCALE(1.1);
+    overflow: hidden;
+}
+.card-group .card{
+    border: none;
+
+}
+
+.pan{
+
+    margin: 0 150px 0 0;
+}
+
+.pan span a i{
+  
+    font-size: 15px;
+    color: rgb(231, 50, 50);
+    margin: 10px 5px 0 5px;
+    float: right;
+    border-radius: 50%;
+    /* padding: 0  0 0 40px; */
+    align-items: center;
+    /* border: 1px solid gray; */
+}
+
+/* .card span2{
+
+    margin: 0 760px 0 0;
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.container .gheading h2{
+
+    font-family:'Great Vibes', cursive; 
+    text-transform: capitalize;
+    font-size: 40px;
+    /* border-bottom: 3px solid red; */
+    background: rgb(231, 50, 50);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin: 90px 0 40px 0;
+    border-radius: 5px;
+    letter-spacing: 3px;
+
+}
+
+.container .gallery {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.container .gallery .dream{
+
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .gallery .dream img{
+
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.container .btn{
+    margin: 40px 0 70px 0;
+    background: rgb(231, 50, 50);
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.685);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+}
+
+.container .btn a{
+    /* margin: 40px 0 70px 0;
+    background: rgb(231, 50, 50);
+    padding: 15px 40px;
+    border-radius: 5px; */
+
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    /* font-weight: bolder; */
+    letter-spacing: 2px;
+    transition: all 0.5 ;
+    
+}
+
+.btn:hover, .btn:focus, .btn:active{
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.432);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* .container .btn:hover{
+
+    transform: scale(1.1);
+    
+} */
+
+/* ====party=== */
+
+.party{
+
+    background: url(../image/ZG064570-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+
+}
+
+.party h1{
+    text-align: center;
+    font-family:'Great Vibes', cursive; 
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: 10px 0 0 0;
+    padding: 70px 0 0 0;
+    color: white;
+    /* background: r; */
+    font-weight: bold;
+    font-size: 45px;
+     /* background: red; */
+     /* display: inline;  */
+    /* border-bottom: 2px solid rgb(218, 15, 15); */
+
+}
+
+.party p{
+    margin: 40px 0 30px 70px;
+    font-size: 20px;
+    color: white;
+}
+
+.form-control{
+
+    margin: 10px 70px 0 240px;
+    /* padding: 10px 20px 0 120px; */
+}
+@media only screen and (max-width: 769px){
+
+    .container .gallery {
+
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+    }
+
+    .container .gallery .dream{
+
+        /* display: flex;
+        flex-direction: column; */
+        width: 100%;
+    }
+}
